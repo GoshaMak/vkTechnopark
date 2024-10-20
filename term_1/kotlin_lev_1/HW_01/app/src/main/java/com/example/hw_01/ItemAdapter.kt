@@ -4,15 +4,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter() : RecyclerView.Adapter<MyViewHolder>()
+class ItemAdapter() : RecyclerView.Adapter<ItemViewHolder>()
 {
     private val items = ArrayList<Int>()
 
     // создание объектов с вёрсткой item_view
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder
     {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_view, parent, false)
-        return MyViewHolder(view)
+        return ItemViewHolder(view)
     }
 
     override fun getItemCount(): Int
@@ -20,7 +20,7 @@ class MyAdapter() : RecyclerView.Adapter<MyViewHolder>()
         return items.size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int)
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int)
     {
         holder.bind(items[position])
     }

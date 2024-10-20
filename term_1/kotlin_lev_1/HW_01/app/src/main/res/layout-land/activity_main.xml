@@ -10,14 +10,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        app:spanCount="4" />
+        app:spanCount="@integer/horizontalSpanCount" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/btnMargin"
         android:src="@drawable/ic_plus"
         />
 
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|start"
-        android:layout_margin="15dp"
+        android:layout_margin="@dimen/btnMargin"
         android:src="@drawable/ic_minus"
         />
 </FrameLayout>

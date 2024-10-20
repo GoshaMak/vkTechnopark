@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 // view - ячейка списка
-class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
+class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view)
 {
     private val text = view.findViewById<TextView>(R.id.text_view)
     private val image = view.findViewById<ImageView>(R.id.image_view)
