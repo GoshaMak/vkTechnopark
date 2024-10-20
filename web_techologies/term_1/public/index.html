@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .nav-link.active {
+            font-size: 30px;
+        }
+
+        .form-control.me-2 {
+            margin-right: 0;
+        }
+
+        .row.justify-content-center {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .border-answer {
+            border-color: black !important;
+            border-width: 2px !important;
+            border-radius: 10px;
+        }
+
+        .page-link {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <a class="nav-link active" href="#">AskMakarenko</a>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">ASK!</button>
+            </form>
+
+            <div class="d-flex">
+                <img src="#" alt="Avatar picture" class="img-thumbnail">
+                <div class="d-flex container text-center">
+                    <div class="col align-items-start">
+                        <div class="row justify-content-center">
+                            Dr. Pepper
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <a href="#">Settings</a>
+                            </div>
+                            <div class="col">
+                                <a href="#">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-9 m-0">
+            <div class="d-flex gap-3 align-items-center">
+                <h1 class="m-0">New Questions</h1>
+                <a href="#">Hot Questions</a>
+            </div>
+
+            <section class="p-0 m-0">
+                <div class="mt-3 border-answer card w-100" style="width: 18rem;">
+                    <div class="card-body" style="height: auto">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="border" style="height: 100px">
+                                    <img src="#" class="img-fluid" alt="Ask-Avatar">
+                                </div>
+                                <input class="form-control" type="number" value="0" placeholder="Default input"
+                                       aria-label="default input example">
+                            </div>
+
+                            <div class="col d-flex flex-column justify-content-between">
+                                <div class="align-top m-0">
+                                    <h5 class="card-title m-0">Question title?</h5>
+                                </div>
+                                <div class="align-top m-0">
+                                    <p class="card-text m-0">Question text.</p>
+                                </div>
+                                <div class="align-bottom">
+                                    <a href="#">answer(4)</a>
+                                    Tags:
+                                    <a href="#" class="card-link m-0">bender</a>
+                                    <a href="#" class="card-link m-0">black-jack</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 border-answer card w-100" style="width: 18rem;">
+                    <div class="card-body" style="height: auto">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="border" style="height: 100px">
+                                    <img src="#" class="img-fluid" alt="Ask-Avatar">
+                                </div>
+                                <input class="form-control" type="number" value="0" placeholder="Default input"
+                                       aria-label="default input example">
+                            </div>
+
+                            <div class="col d-flex flex-column justify-content-between">
+                                <div class="align-top m-0">
+                                    <h5 class="card-title m-0">Question title?</h5>
+                                </div>
+                                <div class="align-top m-0">
+                                    <p class="card-text m-0">Question text.</p>
+                                </div>
+                                <div class="align-bottom">
+                                    <a href="#">answer(4)</a>
+                                    Tags:
+                                    <a href="#" class="card-link m-0">bender</a>
+                                    <a href="#" class="card-link m-0">black-jack</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="mt-4" aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="col">
+            <h2 class="m-0">
+                Popular Tags
+            </h2>
+            <div class="mb-3">
+                <span class="badge text-bg-primary">Perl</span>
+                <span class="badge text-bg-secondary">Python</span>
+                <span class="badge text-bg-success">TechnoPark</span>
+                <span class="badge text-bg-danger">MySQL</span>
+                <span class="badge text-bg-warning">Django</span>
+                <span class="badge text-bg-info">Kotlin</span>
+            </div>
+            <h3 class="m-0">
+                Best Members
+            </h3>
+            <div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="#">Me</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Myself</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">And I</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

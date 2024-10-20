@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .nav-link.active {
+            font-size: 30px;
+        }
+
+        .form-control.me-2 {
+            margin-right: 0;
+        }
+
+        .row.justify-content-center {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between align-items-center">
+            <a class="nav-link active" href="#">AskMakarenko</a>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">ASK!</button>
+            </form>
+
+            <div class="d-flex">
+                <img src="#" alt="Avatar picture" class="img-thumbnail">
+                <div class="d-flex container text-center">
+                    <div class="col align-items-start">
+                        <div class="row justify-content-center">
+                            Dr. Pepper
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <a href="#">Settings</a>
+                            </div>
+                            <div class="col">
+                                <a href="#">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <div class="row">
+        <div class="col-9">
+
+        </div>
+        <div class="col">
+            <h2 class="m-0">
+                Popular Tags
+            </h2>
+            <div class="mb-3">
+                <span class="badge text-bg-primary">Perl</span>
+                <span class="badge text-bg-secondary">Python</span>
+                <span class="badge text-bg-success">TechnoPark</span>
+                <span class="badge text-bg-danger">MySQL</span>
+                <span class="badge text-bg-warning">Django</span>
+                <span class="badge text-bg-info">Kotlin</span>
+            </div>
+            <h3 class="m-0">
+                Best Members
+            </h3>
+            <div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="#">Me</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">Myself</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">And I</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
