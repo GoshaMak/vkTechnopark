@@ -1,6 +1,7 @@
 package com.example.hw_01
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -24,7 +25,18 @@ class MainActivity : AppCompatActivity()
         fabRm = findViewById(R.id.fab_rm)
 
         fabAdd.setOnClickListener {
-            adapter.addItem(adapter.itemCount + 1)
+            if (adapter.itemCount == 5)
+            {// diffutils, listadapter
+                Toast.makeText(
+                    this,
+                    "Five squares",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
+            else
+            {
+                adapter.addItem(adapter.itemCount + 1)
+            }
         }
 
         fabRm.setOnClickListener {

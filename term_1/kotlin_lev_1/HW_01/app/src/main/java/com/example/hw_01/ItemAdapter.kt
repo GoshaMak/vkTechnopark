@@ -3,6 +3,7 @@ package com.example.hw_01
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import kotlin.math.sign
 
 class ItemAdapter() : RecyclerView.Adapter<ItemViewHolder>()
 {
